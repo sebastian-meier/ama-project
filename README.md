@@ -3,9 +3,51 @@ Wordpress Theme for ama-project.org
 
 ## SETUP
 
+For wordpress details (see below).
+
+### CSS & JS
+
+```
+npm install
+```
+
+JS Linting using ESLINT
+```
+npm run lint
+```
+
+Transpiling for older browsers
+```
+npm run babel
+```
+
+Minify and combine files (uglify-js)
+```
+npm run minify
+```
+
+Build CSS files
+```
+npm run css
+```
+
+Do all the above in one run
+```
+npm run build
+```
+
 ### PLUGINS
 
 Several Plugins are required for setting up this system:
+
+#### 0. Private Files
+
+There is a custom .htaccess to protect private files:
+
+```
+RewriteEngine On
+RewriteRule ^wp-content/uploads/(.*)$ index.php?pagename=uploads&uploads_url=$1 [L,NC]
+```
 
 #### 1. WPML
 
