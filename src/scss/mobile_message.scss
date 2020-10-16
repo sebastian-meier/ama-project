@@ -1,0 +1,34 @@
+/* MOBILE MESSAGE */
+
+#mobile-message{
+    display: block;
+    position:fixed;
+    width:100%;
+    text-align:center;
+    top:100px;
+  }
+  
+  #page #mobile-message p{
+    font-style: italic;
+    font-family: "Source Serif Pro",Georgia,serif;
+    font-size:18px;
+    color:black;
+    text-align: center;
+    line-height: 24px;
+    font-weight:bold;
+    max-width:230px;
+    margin:0 auto;
+    display:inline-block;
+  }
+  
+  .page-template-default #page #mobile-message,
+  .page-template-search-page-php #page #mobile-message,
+  .page-template-single-home-php #page #mobile-message{
+    display:none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #mobile-message{
+      display:none;
+    }
+  }

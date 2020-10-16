@@ -1,0 +1,47 @@
+/*--------- INTRO TOOLTIPS ---------*/
+
+.shepherd-element{
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+  }
+  
+  .shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button{
+    background:#fff;
+    border-radius:0;
+    border:2px solid #fff;
+    color:#222;
+  }
+  
+  .shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button:hover{
+    border:2px solid rgba(255,255,255,0.5);
+    background:rgba(255,255,255,0.5);
+  }
+  
+  .shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-button-secondary{
+    background:transparent;  
+    border:2px solid #fff;
+    color:#fff;
+  }
+  
+  .shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-button-secondary:hover{
+    background:transparent;
+    border:2px solid rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.5);
+  }
+  
+  .tippy-tooltip{
+    text-align:left;
+  }
+  
+  .shepherd-element .shepherd-content header .shepherd-title{
+    font-weight:bold;
+    color:#fff;
+  }
+  
+  .shepherd-element .shepherd-content header .shepherd-cancel-link,
+  .shepherd-element .shepherd-content .shepherd-text{
+    color:#fff;
+  }
+  
+  .shepherd-element .shepherd-content header .shepherd-cancel-link:hover{
+    color:rgba(255,255,255,0.5);
+  }

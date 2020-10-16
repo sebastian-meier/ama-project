@@ -1,0 +1,44 @@
+/* ENCYCLOPEDIA */
+  
+#search h2, .post-type-archive-encyclopedia h2 a{
+    font-family: "Source Serif Pro",Georgia,serif;
+    font-style:italic;
+    font-size:24px;
+    /*letter-spacing: 1px;*/
+    margin:10px 0 0 0;
+    padding:0; 
+    color:#000;
+    text-decoration: none;
+  }
+  
+  .post-type-archive-encyclopedia #page p{
+    padding-top:0;
+    margin-top:0;
+    padding-bottom:40px;
+  }
+  
+  .encyclopedia-prefix-filters{
+    padding-top:30px;
+  }
+  
+  .encyclopedia-prefix-filters .level-1{
+    border-bottom:1px solid #000;
+    background-color: #f9f9f9;
+  }
+  
+  .encyclopedia-prefix-filters .level-1 .filter a{
+    color:#000;
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight:normal; 
+  }
+  
+  .encyclopedia-prefix-filters .level-1 .filter.current-filter a{
+    font-weight:bold; 
+  }
+  
+  .encyclopedia-prefix-filters .level-1 .filter a:hover{
+    cursor:pointer;
+    color:#999; 
+  }

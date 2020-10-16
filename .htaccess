@@ -1,0 +1,26 @@
+#AuthType Basic
+#AuthName "AMA DEV"
+#AuthBasicProvider file
+#AuthUserFile /home/ama-project/.htpasswd
+#Require valid-user
+
+# Access Control for file uploads
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^wp-content/uploads/(.*)$ index.php?pagename=uploads&uploads_url=$1 [L,NC]
+
+# BEGIN WordPress
+# The directives (lines) between `BEGIN WordPress` and `END WordPress` are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

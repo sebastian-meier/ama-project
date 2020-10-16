@@ -1,0 +1,67 @@
+ /* About Menu */
+  
+ #about-menu{
+    width:100%;
+  }
+  
+  #about-menu a{
+    text-decoration: none;
+    color:#000;
+    font-family: "Raleway",Helvetica,Arial,sans-serif;
+    font-size:14px;
+  }
+  
+  #about-menu a:hover{
+    color:#999;
+  }
+  
+  #about-menu h3{
+    padding:0;
+    margin:0;
+  }
+  
+  #about-menu h3 a{
+    font-size:18px;
+    font-weight:bold;
+    display: block;
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+    margin-bottom:5px;
+  }
+  
+  #about-menu li{
+    padding-bottom:5px;
+    float:left;
+    margin-right:10px;
+  }
+  
+  #about-menu li.current-menu-item a{
+    color:#999;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    article.page{
+      float:left;
+      max-width: 66%;
+    }
+  
+    .front-page article.page{
+      max-width:100%;
+      float:none;
+    }
+  
+    #about-menu{
+      float:right;
+      width:200px;
+    }
+  
+    #about-menu li{
+      float:none;
+    }
+  
+    #about-menu h3{
+      padding-top:5px;
+      padding-bottom:5px;
+    }
+  
+  }

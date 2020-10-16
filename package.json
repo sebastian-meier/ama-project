@@ -1,0 +1,33 @@
+{
+  "name": "ama-project",
+  "version": "1.0.0",
+  "description": "wordpress theme for ama-project.org",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint src/js/ --fix",
+    "transpile": "babel src/js -d build/assets/js/babel",
+    "minify": "uglifyjs build/assets/js/babel/bipart.js build/assets/js/babel/form.js build/assets/js/babel/list.js build/assets/js/babel/map-cluster.js build/assets/js/babel/matrix-circle.js build/assets/js/babel/matrix-rect.js build/assets/js/babel/network-home.js build/assets/js/babel/network-overall-thematic.js build/assets/js/babel/preloader.js build/assets/js/babel/radial-chart.js build/assets/js/babel/main.js build/assets/js/babel/app.js -o build/assets/js/main.min.js --compress",
+    "css": "sass src/scss/main.scss:build/style.css --style=compressed",
+    "build": "npm run lint && npm run transpile && npm run minify && npm run css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastian-meier/ama-project.git"
+  },
+  "author": "sebastian-meier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastian-meier/ama-project/issues"
+  },
+  "homepage": "https://github.com/sebastian-meier/ama-project#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "eslint": "^7.11.0",
+    "eslint-config-google": "^0.14.0",
+    "sass": "^1.27.0",
+    "uglifyjs-folder": "^2.0.0"
+  },
+  "dependencies": {}
+}
