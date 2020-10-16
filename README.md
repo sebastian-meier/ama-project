@@ -80,6 +80,10 @@ Sensitive information are for example phone numbers. Sensitive information is de
 
 The above rules define the default settings for added content. In addition to the above rules items can be restricted to certain roles on an per item level, this means that items are only accessible to certain roles, this can be defined when creating or editing an item.
 
+## Visualisations (Network / Private Network)
+
+The visualisations are build in D3 and are driven by nightly generated json and csv files (ama/network.php and ama/network-private.php). The building of the network takes too long to do it in real time. Therefore a cached nightly build is generated. As wordpress cron is not great. Currently cron-job.org calls the two network generators at 00:00.
+
 # TODOs:
 The custom data types do not have archives, yet. Those archives are not actively linked from anywhere, but for completeness it would be nice to have them. They are already setup, they just need to be filled with content.
 
